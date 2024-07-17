@@ -12,7 +12,7 @@ private:
     string passenger_name;
     string departure_date;
 public:
-    Request(int request_id, string destination, string passenger_name, string departure_date);
+    Request(string destination, string passenger_name, string departure_date);
 
     int getRequestID() const;
 
@@ -23,6 +23,9 @@ public:
     string getDestination() const;
     string getPassengerName() const;
     string getDepartureDate() const;
+
+    bool operator<(const Request& other) const;
+    friend ostream& operator<<(ostream& os, const Request& req);
 
 };
 

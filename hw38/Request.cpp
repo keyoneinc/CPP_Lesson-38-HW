@@ -1,6 +1,6 @@
 #include "Request.h"
 
-Request::Request(int request_id, string destination, string passenger_name, string departure_date)
+Request::Request(string destination, string passenger_name, string departure_date)
 {
     this->request_id = ++counter;
     this->destination = destination;
@@ -42,4 +42,18 @@ string Request::getPassengerName() const
 string Request::getDepartureDate() const
 {
     return departure_date;
+}
+
+bool Request::operator<(const Request& other) const
+{
+    if (destination != other.destination)
+        return destination < other.destination;
+    return departure_date < other.departure_date;
+}
+
+ostream& operator<<(ostream& os, const Request& req)
+{
+    os << "Request ID: " << req.request_id << ", Destination: " << req.destination
+        << ", Passenger: " << req.passenger_name << ", Departure Date: " << req.departure_date;
+    return os;
 }
