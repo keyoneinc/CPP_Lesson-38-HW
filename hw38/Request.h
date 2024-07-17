@@ -12,7 +12,7 @@ private:
     string passenger_name;
     string departure_date;
 public:
-    Request(string destination, string passenger_name, string departure_date);
+    Request(int request_id, string destination, string passenger_name, string departure_date);
 
     int getRequestID() const;
 

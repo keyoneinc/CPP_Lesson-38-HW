@@ -1,6 +1,6 @@
 #include "Request.h"
 
-Request::Request(string destination, string passenger_name, string departure_date)
+Request::Request(int request_id, string destination, string passenger_name, string departure_date)
 {
     this->request_id = ++counter;
     this->destination = destination;
