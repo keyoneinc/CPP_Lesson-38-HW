@@ -18,5 +18,13 @@
     <ClCompile Include="hw38.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Request.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Request.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
