@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="hw38.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="Request.cpp" />
     <ClCompile Include="RequestManager.cpp" />
   </ItemGroup>
